@@ -1,11 +1,17 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>My Teams</ion-title>
+  <ion-navbar color="primary">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Elite Schedule</ion-title>
   </ion-navbar>
+  <ion-toolbar color="secondary">
+    <ion-title>My Teams</ion-title>
+  </ion-toolbar>
 </ion-header>
 
 <ion-content padding>
   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quibusdam harum expedita voluptate eos eum eligendi repudiandae, pariatur aliquam fugit debitis quo quos fuga eaque commodi laborum. Nam, expedita eos!</p>
   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit earum alias amet consectetur minus eius sed inventore, similique tempore porro nulla sint esse molestias maiores cum possimus aut fugiat perspiciatis!</p>
-  <button (click)="goToTournaments()">Find a Tournament</button>
+  <button ion-button (click)="goToTournaments()">Find a Tournament</button>
 </ion-content>
