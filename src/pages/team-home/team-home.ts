@@ -10,7 +10,6 @@ import {StandingsPage, TeamDetailPage, MyTeamsPage} from '../pages'
  * Ionic pages and navigation.
  */
 
-@IonicPage()
 @Component({
   selector: 'page-team-home',
   templateUrl: 'team-home.html',
