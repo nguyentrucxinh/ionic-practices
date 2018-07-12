@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Facebook Login
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <button *ngIf="!isLoggedInFb" ion-button full (click)="loginWithFb()">Login Facebook</button>
+  <button *ngIf="isLoggedInFb" ion-button full (click)="logoutWithFb()">Logout Facebook</button>
+
+  <button *ngIf="!isLoggedInGg" ion-button full (click)="loginWithGg()">Login Google</button>
+  <button *ngIf="isLoggedInGg" ion-button full (click)="logoutWithGg()">Logout Google</button>
+
+  <ion-card *ngIf="userData">
+    <ion-card-header>{{ userData.username }}</ion-card-header>
+    <img [src]="userData.picture" alt="">
+    <ion-card-content>
+      <p>Email: {{ userData.email }}</p>
+      <p>First Name: {{ userData.first_name }}</p>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
